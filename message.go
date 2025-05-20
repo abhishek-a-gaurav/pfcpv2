@@ -103,6 +103,7 @@ type PFCPAssociationSetupRequest struct {
 	UPFunctionFeatures             *pfcpType.UPFunctionFeatures             `tlv:"43"`
 	CPFunctionFeatures             *pfcpType.CPFunctionFeatures             `tlv:"89"`
 	UserPlaneIPResourceInformation *pfcpType.UserPlaneIPResourceInformation `tlv:"116"`
+	AlternativeSMFIPAddress        []*pfcpType.AlternativeSMFIPAddress      `tlv:"178"`
 }
 
 type PFCPAssociationSetupResponse struct {
